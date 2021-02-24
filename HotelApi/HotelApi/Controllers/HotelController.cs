@@ -22,7 +22,11 @@ namespace HotelApi.Controllers
         [HttpGet]
         public IEnumerable<Hotel> Get()
         {
-            var hotelList = new List<Hotel>() { new Hotel { Name = "Beach Hotel", Address = "Beach Side", Description = "Surf Hotel", Score = 4 }, new Hotel { Name = "Castle Hotel", Address = "Mountain Road", Description = "Historic Hotel", Score = 5 } };
+            var hotelList = new List<Hotel>() { 
+                new Hotel { Name = "Beach Hotel", Address = "Beach Side", Description = "Surf Hotel", Score = 4 },
+                new Hotel { Name = "Castle Hotel", Address = "Mountain Road", Description = "Historic Hotel", Score = 5 },
+                new Hotel { Name = "Feast Hotel", Address = "Pub Road", Description = "Gourmet Hotel", Score = 3 }
+            };
 
             return hotelList;
         }
